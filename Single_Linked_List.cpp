@@ -5,10 +5,10 @@ using namespace std;
 struct Baju{
   string merek, warna, ukuran;
 
-  Sepatu *next;
+  Baju *next;
 };
 
-Sepatu *head, *tail, *newNode, *cur, *del;
+Baju *head, *tail, *newNode, *cur, *del;
 
 // create Circular Single Linked List
 void createCircularSingleLinkedList(string dataBaru[3]){
