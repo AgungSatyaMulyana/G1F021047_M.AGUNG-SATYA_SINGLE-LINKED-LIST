@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Deklarasi struktur untuk Circular Single Linked List
+// Deklarasi struktur untuk Single Linked List
 struct Baju{
   string merek, warna, ukuran;
 
