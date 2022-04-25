@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Deklarasi struktur untuk Single Linked List
 struct Baju{
   string merek, warna, ukuran;
 
@@ -10,7 +9,6 @@ struct Baju{
 
 Baju *head, *tail, *newNode, *cur, *del;
 
-// create Circular Single Linked List
 void createCircularSingleLinkedList(string dataBaru[3]){
 
   head = new Baju();
@@ -22,7 +20,6 @@ void createCircularSingleLinkedList(string dataBaru[3]){
 
 }
 
-// add first
 void addFirst( string data[3] ){
   if( head == NULL ){
     cout << "Buat Linked List dahulu!!" << endl;
@@ -37,7 +34,6 @@ void addFirst( string data[3] ){
   }
 }
 
-// add Last
 void addLast( string data[3] ){
   if( head == NULL ){
     cout << "Buat Linked List dahulu!!" << endl;
@@ -52,7 +48,6 @@ void addLast( string data[3] ){
   }
 }
 
-// add Middle
 void addMiddle(string data[3], int posisi)
 {
   if( head == NULL ){
@@ -66,7 +61,6 @@ void addMiddle(string data[3], int posisi)
       newNode->warna = data[1];
       newNode->ukuran = data[2];
 
-      // tranversing
       int nomor = 1;
       cur = head;
       while (nomor < posisi - 1)
@@ -80,7 +74,6 @@ void addMiddle(string data[3], int posisi)
   }
 }
 
-// remove First
 void removeFirst(){
   if( head == NULL ){
     cout << "Buat Linked List dahulu!!" << endl;
@@ -92,7 +85,6 @@ void removeFirst(){
   }
 }
 
-// remove last
 void removeLast()
 {
   if( head == NULL ){
@@ -109,7 +101,6 @@ void removeLast()
   }
 }
 
-// remove middle
 void removeMiddle(int posisi)
 {
   if( head == NULL ){
@@ -127,7 +118,6 @@ void removeMiddle(int posisi)
     delete del;
   }
 }
-
 
 void printCircular()
 {
